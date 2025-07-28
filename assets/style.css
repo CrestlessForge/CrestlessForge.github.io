@@ -5,30 +5,32 @@ body {
   color: #f5f5f5;
 }
 
-header {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.banner {
+header .banner {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.overlay {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -30%);
-  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+.branding {
+  text-align: center;
+  padding: 30px 20px 10px;
 }
 
-.logo {
+.branding .logo {
   width: 100px;
   height: auto;
   margin-bottom: 10px;
+}
+
+.branding h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.branding .tagline {
+  color: #ffa733;
+  font-size: 1.1em;
+  margin-top: 5px;
 }
 
 main {
