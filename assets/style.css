@@ -11,6 +11,11 @@ header .banner {
   display: block;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .branding {
   text-align: center;
   padding: 30px 20px 10px;
@@ -40,6 +45,23 @@ header .banner {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 167, 51, 0.3);
 }
+
+.signup-btn {
+  display: inline-block;
+  background-color: #ffa733;
+  color: #1e1e1e;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #ff8c00;
+}
+
 main {
   padding: 40px 20px;
   max-width: 800px;
@@ -64,4 +86,14 @@ footer {
   padding: 20px;
   font-size: 0.9em;
   color: #999;
+}
+
+@media (max-width: 600px) {
+  .branding h1 {
+    font-size: 1.5em;
+  }
+
+  .signup p {
+    font-size: 1em;
+  }
 }
