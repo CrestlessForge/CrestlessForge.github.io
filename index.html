@@ -8,12 +8,14 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 
     <!-- MailerLite Universal -->
+    <script src="https://static.mailerlite.com/js/universal.js"></script>
 <script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://static.mailerlite.com/js/universal.js','ml');
-    ml('account', '1695744');
+    (function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+  var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+  f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||[];m[e].version='1.0';
+  var s=a.createElement(i);var p=a.getElementsByTagName(i)[0];
+  s.async=1;s.src=l;p.parentNode.insertBefore(s,p);
+  })(window,document,'script','https://static.mailerlite.com/js/universal.js','ml');
 </script>
 <!-- End MailerLite Universal -->
   </head>
@@ -70,7 +72,7 @@
           Don’t be slag — be molten. 🔥<br />
           Sign up to shape the future with EchoScribe, AutoBrief, and more.
         </p>
-        <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'obBS3f', true)">Join Now!</a>
+        <button onclick="ml('show', 'obBS3f', true)">Join Now!</button>
       </section>
       <section>
         <h2>Connect With Us</h2>
